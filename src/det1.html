@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>det 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.scss">
+    <script type="module" src="app.js"></script>
+  </head>
+
+  <body>
+  <header>
+    <div class="container-nav">
+      <include src="src/partials/nav.html"></include>
+    </div>  
+  </header>
+
+  <main>
+    <div class="container-det container-det--mojito">
+      <h1 class="container-det__title">
+        Mojito
+      </h1>
+    </div>
+
+    <include src="src/partials/carousel.html"></include>
+
+    <div class="container-body">
+      <div class="container-body__card container-body__card--primary">
+        <p class="container-body__text--bigger">
+        Cuba es sin duda alguna la cuna del mojito, a pesar de que el origen exacto de este cóctel clásico es siempre objeto de debate. Una de las historias cuentan que el mojito se remonta al siglo XVI, se cree que sus raíces se remontan incluso al año 1586, cuando un grupo de piratas lo llamaban «El Draque«, en honor al pirata inglés y comerciante de esclavos Francis Drake.
+      </p>
+      </div>
+      
+      <div class="container-flex">
+
+        <div class="container-body__card container-body__card--green">
+          <p class="container-body__text">
+          el mojito se hacía con tafia, un predecesor primitivo del ron, un aguardiente de caña, usando los otros ingredientes para disimular su gusto áspero. No hay duda de que la bebida mejoró sustancialmente durante el siglo XIX, con la introducción de alambiques de cobre y el proceso de añejamiento que desembocó en la forma moderna del ron.<br><br>
+
+          Este cóctel se dio a conocer como una bebida con un poco de mojo, donde el añadido eran los trozos de lima, de forma coloquial le quedó el nombre de mojito. 
+        </p>
+        </div>
+
+        <div class="container-body__card">
+          <p class="container-body__text">
+          Si seguimos la receta original, un Mojito cubano bien elaborado es un trago increíblemente refrescante y agradable, ideal para tomar en los meses más calurosos del año.<br><br>
+
+          Además de servirse frío, es un cóctel con una acidez y unos aromas cítricos y frescos de hierbabuena y lima que lograrán que nos olvidemos del calor.
+        </p>
+        </div>
+        
+      </div>
+
+    </div>
+
+    <div class="container-video">
+      <iframe class="container-video__iframe" src="https://www.youtube.com/embed/sIvYdLHwv8A?si=Ks9ph58_LHMNBAn6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>    
+  </main>
+      
+  <include src="src/partials/footer.html"></include>
+
+  </body>
+</html>

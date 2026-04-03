@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>PEC 1 - Herramientas de HTML y CSS I</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.scss">
+    <script type="module" src="app.js"></script>
+  </head>
+
+
+  <body>
+  <header>
+    <div class="container-nav">
+      <include src="src/partials/nav.html"></include>
+    </div>  
+  </header>
+
+  <main class="container-body">
+
+    <div class="container-body">
+      <h2 class="container-body__title">
+        Bebidas destacadas
+      </h2>
+
+    </div>
+    <div class="container-card">
+
+      <div class="card-category card-category--yellow">
+        
+        <div class="card-category__image">
+          <img src="images/mojito-display.png">
+        </div>
+
+        <div>
+          <p class="card-category__title">
+            Mojito
+          </p>
+          <p class="card-category__text">
+            Pruébalos esta semana
+          </p>
+
+          <a href="det1.html">
+            <button class="button button--primary">
+            ¡Descubre más!
+          </button>
+          </a>
+          
+        </div>
+
+      </div>
+
+      <div class="card-category card-category--highlight">
+        
+        <div class="card-category__image">
+          <img src="images/pina-colada-display.png">
+        </div>
+
+        <div>
+          <p class="card-category__title">
+            Piña colada
+          </p>
+          <p class="card-category__text">
+            Pruébalos esta semana
+          </p>
+          <a href="det2.html">
+            <button class="button button--primary">
+            ¡Descubre más!
+          </button>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="card-category card-category--green">
+        
+        <div class="card-category__image">
+          <img src="images/coctel-display.png">
+        </div>
+
+        <div>
+          <p class="card-category__title">
+            Cóctel
+          </p>
+          <p class="card-category__text">
+            Pruébalos esta semana
+          </p>
+          <button class="button button--primary">
+            ¡Descubre más!
+          </button>
+        </div>
+
+      </div>
+        
+
+        
+
+
+    </div>
+    
+  </main>
+      
+  <include src="src/partials/footer.html"></include>
+
+  </body>
+</html>

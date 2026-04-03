@@ -1,0 +1,15 @@
+# DEPENDENCIAS
+node_modules/
+
+# CACHÉ SASS
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+# CACHÉ PARCEL
+.cache
+.parcel-cache
+
+# RESULTADOS DE COMPILACIÓN
+dist/

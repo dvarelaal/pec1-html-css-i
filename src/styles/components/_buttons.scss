@@ -1,0 +1,20 @@
+@use "../variables";
+
+.button {
+  padding-inline: 20px;
+  padding-block: 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 15px;
+
+  &--primary {
+    background-color: variables.$brand-light;
+    color: variables.$brand-brown;
+
+    &:hover {
+    background-color: variables.$brand-highlight;
+    color: variables.$brand-light;
+    }
+  }
+}
