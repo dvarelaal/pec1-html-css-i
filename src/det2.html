@@ -12,14 +12,27 @@
   </head>
 
   <body>
-  <header>
+  <header> 
     <div class="container-nav">
       <include src="src/partials/nav.html"></include>
     </div>  
   </header>
 
   <main>
-    <div class="container-det container-det--pina-colada">
+    <div class="container-det">
+      <picture>
+        <source 
+        media="(max-width: 799px)"
+        srcset="images/pina-colada-background-2.jpg?width=799&as=avif"
+        type="image/avif">
+
+        <source 
+        media="(min-width: 800px)"
+        srcset="images/pina-colada-background.jpg?as=avif"
+        type="image/avif">
+        
+        <img class="container-det__background-img" src="images/pina-colada-background.jpg" alt="imagen de una piña colada sobre fondo negro">
+      </picture>
       <h1 class="container-det__title">
         Piña colada
       </h1>

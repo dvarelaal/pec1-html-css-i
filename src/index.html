@@ -21,14 +21,45 @@
 
       <h1 class="container-display__title"> Tus cócteles<br><em class="container-display__em">favoritos</em></h1>
 
-      <img class="container-display__image container-display__image--top" src="images/mojito-display.png">
+      <picture>
+        <source 
+          type="image/webp"
+          srcset="images/mojito-display.png?height=600&as=webp 600h,
+                  images/mojito-display.png?height=700&as=webp 700h"
+          sizes="(max-height: 576px) 600px, 700px">       
+        
 
-      <img class="container-display__image container-display__image--back" src="images/pina-colada-coctel.png"> 
+        <img class="container-display__image container-display__image--top" src="images/mojito-display.png?height=700" alt="imagen de un mojito en primer plano">
+      </picture>
 
-      <img class="container-display__image--leaves" src="images/leaves-1.png">
+      <picture>
+        <source 
+          srcset="images/pina-colada-coctel.png?height=600&as=webp 600h,
+                  images/pina-colada-coctel.png?height=700&as=webp 700h"
+        
+          sizes="(max-height: 576px) 600px, 700px">
 
-      <img class="container-display__image--lemon" src="images/lemon.png">
+        <img class="container-display__image container-display__image--back" src="images/pina-colada-coctel.png?height=700" alt="imagen con una piña colada y un cóctel"> 
+      </picture>
+      
+      <picture>
+        <source 
+          srcset="images/leaves-1.png?height=300&as=webp ,
+                  images/leaves-1.png?height=600&as=webp 2x"
+          type="image/webp">        
 
+        <img class="container-display__image--leaves" src="images/leaves-1.png?height=300" alt="Hojas salientes por la zona izquierda">
+      </picture>
+      
+      <picture>
+        <source 
+          srcset="images/lemon.png?height=200&as=webp ,
+                  images/lemon.png?height=400&as=webp 2x"
+          type="image/webp">
+
+        <img class="container-display__image--lemon" src="images/lemon.png?height=200" alt="imagen de un limón">
+      </picture>
+      
     </div>
 
   </header>
@@ -36,12 +67,31 @@
   <main>
     <div class="container-body">
       <div class="container-hero">
+        <svg widht="0" height="0" >
+          <defs>
+            <clipPath id="path">
+              <path d="M0 65v-4C0 27 34 0 76 0q21 0 39 8a91 91 0 0 1 76 0 91 91 0 0 1 77 0 91 91 0 0 1 76 0 91 91 0 0 1 76 0 91 91 0 0 1 77 0 91 91 0 0 1 76 0 91 91 0 0 1 77 0 91 91 0 0 1 76 0 91 91 0 0 1 77 0 91 91 0 0 1 76 0 91 91 0 0 1 77 0 91 91 0 0 1 76 0 91 91 0 0 1 76 0 91 91 0 0 1 77 0 91 91 0 0 1 76 0q18-8 39-8c42 0 76 27 76 61v371c-2 32-36 58-76 58q-21 0-39-8a91 91 0 0 1-76 0 91 91 0 0 1-77 0 91 91 0 0 1-76 0 91 91 0 0 1-76 0 91 91 0 0 1-77 0 91 91 0 0 1-76 0 91 91 0 0 1-77 0 91 91 0 0 1-76 0 91 91 0 0 1-77 0 91 91 0 0 1-76 0 91 91 0 0 1-77 0 91 91 0 0 1-76 0 91 91 0 0 1-76 0 91 91 0 0 1-77 0 91 91 0 0 1-76 0q-18 8-39 8c-40 0-74-26-76-58V65"></path>
+            </clipPath>
+          </defs>
+        </svg>
 
         <div class="container-hero__left">
 
-            <img class="container-hero__img js-circular" src="images/loop-text-brown.png">
+          <svg class="container-hero__svg" viewBox="0 0 200 200">
+            <defs>
+              <path id="circle-path" 
+                    d=" M 100, 100
+                        m -80, 0
+                        a 80,80 0 1,1 160,0
+                        a 80,80 0 1,1 -160,0"/>
+            </defs>
+          <text class="container-hero__svg-text">
+            <textPath href="#circle-path">
+              Noir Spirits | Noir Spirits | Noir Spirits | Noir Spirits |
+            </textPath>
+          </text>
+          </svg>
           
-
         </div>
 
 

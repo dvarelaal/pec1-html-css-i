@@ -31,9 +31,14 @@
 
       <div class="card-category card-category--yellow">
         
-        <div class="card-category__image">
-          <img src="images/mojito-display.png">
-        </div>
+          <picture class="card-category__image">
+            <source 
+              srcset="images/mojito-display.png?height=200&as=webp ,
+              images/mojito-display.png?height=600&as=webp 2x"
+              type="image/webp">
+
+            <img src="images/mojito-display.png?height=600" alt="imagen de un mojito">
+          </picture>
 
         <div>
           <p class="card-category__title">
@@ -55,10 +60,16 @@
 
       <div class="card-category card-category--highlight">
         
-        <div class="card-category__image">
-          <img src="images/pina-colada-display.png">
-        </div>
+        <picture class="card-category__image">
+          <source 
+            srcset="images/pina-colada-display.png?height=200&as=webp ,
+                    images/pina-colada-display.png?height=600&as=webp 2x"
 
+            type="image/webp">
+
+          <img src="images/pina-colada-display.png?height=600" alt="imagen de una piña colada">
+        </picture>
+          
         <div>
           <p class="card-category__title">
             Piña colada
@@ -77,9 +88,14 @@
 
       <div class="card-category card-category--green">
         
-        <div class="card-category__image">
-          <img src="images/coctel-display.png">
-        </div>
+        <picture class="card-category__image">
+          <source 
+            srcset="images/coctel-display.png?height=200&as=webp ,
+            images/coctel-display.png?height=600&as=webp 2x"
+            type="image/webp">
+
+          <img src="images/coctel-display.png?height=600" alt="imagen de un coctel">
+        </picture>
 
         <div>
           <p class="card-category__title">

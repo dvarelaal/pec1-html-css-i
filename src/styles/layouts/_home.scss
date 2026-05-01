@@ -76,7 +76,11 @@ body {
   
   &__image {
     width: auto;
-    height: 600px;
+    height: 700px;
+
+    @media (max-width: variables.$max-width) {
+      height: 600px;
+    }
   }    
 
   &__image--top {
@@ -167,17 +171,38 @@ body {
   border-radius: 20px;
   margin-block: 100px;
   padding-bottom: 120px;
+  clip-path: url(#path);
+  object-fit: cover;
 
   &__left {
     width: 80%;
   }
 
-  &__img {
-    width: auto;
+  &__svg {
+    width: 200px;
     height: 200px;
     position: absolute;
-    top: 400px;
-    left: -70px;
+    top: 270px;
+    left: 20px;
+  }
+
+  &__svg-text {
+    font-family: variables.$font-family-body;
+    font-size: 20px;
+    fill: variables.$brand-brown;
+    font-weight: variables.$text-weight-bold;
+    letter-spacing: 0.5px;
+    animation: spin 5s linear infinite;
+    transform-origin: center;
+
+    @keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
   }
 
   &__info {
@@ -238,18 +263,19 @@ body {
   position: relative;
   top: -100px;
   margin-bottom: 50px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   z-index: -1;
 
-  &--mojito {
-    background-image: url('../images/mojito-background.jpg');
+
+  &__background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
   }
 
-  &--pina-colada {
-    background-image: url('../images/pina-colada-background.jpg');
-  }
 
   &__title {
     font-family: variables.$font-family-special;

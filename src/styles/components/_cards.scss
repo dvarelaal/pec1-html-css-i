@@ -19,6 +19,7 @@
 
   @media (max-width: variables.$max-width) {
       flex-direction: row;
+      margin-bottom: 40px;
     }
 
   @media (max-width: 670px) {

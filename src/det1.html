@@ -19,11 +19,25 @@
   </header>
 
   <main>
-    <div class="container-det container-det--mojito">
+    <div class="container-det">
+      <picture>
+        <source 
+        media="(max-width: 799px)"
+        srcset="images/mojito-background-2.jpg?width=799&as=avif"
+        type="image/avif">
+
+        <source
+        media="(min-width: 800px)"
+        srcset="images/mojito-background.jpg?as=avif"
+        type="image/avif">
+
+        <img class="container-det__background-img" src="images/mojito-background.jpg" alt="imagen de un mojito sobre fondo negro">
+      </picture>
       <h1 class="container-det__title">
         Mojito
       </h1>
     </div>
+
 
     <include src="src/partials/carousel.html"></include>
 
