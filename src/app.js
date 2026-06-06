@@ -1,3 +1,9 @@
+
+// Importo tipografías con fontsource
+import '@fontsource-variable/syne/wght.css';
+// Supports weights 100-900
+import '@fontsource-variable/roboto/wght.css';
+
 //Importo la dependencia de gsap
 import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";

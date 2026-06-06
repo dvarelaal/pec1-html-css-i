@@ -25,6 +25,8 @@
     "sharp": "^0.33.5"
   },
   "dependencies": {
+    "@fontsource-variable/roboto": "^5.2.10",
+    "@fontsource-variable/syne": "^5.2.7",
     "gsap": "^3.14.2"
   }
 }
