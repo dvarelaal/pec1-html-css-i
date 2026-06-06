@@ -213,7 +213,7 @@ body {
   &__title {
     font-family: variables.$font-family-special;
     font-size: 3.3rem;
-    color: variables.$brand-light;
+    color: variables.$brand-brown;
     padding-right: 30px; 
   }
 
@@ -221,7 +221,7 @@ body {
     @include variables.text-body;
     width: 80%;
     font-size: 1.3rem;
-    color: variables.$brand-light;
+    color: variables.$brand-brown;
     margin-bottom: 60px;
     text-wrap: wrap;
   }
