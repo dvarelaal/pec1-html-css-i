@@ -6,6 +6,8 @@
     <title>det 1</title>
     <link rel="stylesheet" href="styles/main.scss">
     <script defer type="module" src="app.js"></script>
+    <script defer src="../node_modules/lite-youtube-embed/src/lite-yt-embed.js"></script>
+
 
   </head>
 
@@ -68,9 +70,19 @@
 
     </div>
 
+    <!--
     <div class="container-video">
       <iframe class="container-video__iframe" src="https://www.youtube.com/embed/sIvYdLHwv8A?si=Ks9ph58_LHMNBAn6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>    
+    -->
+
+    <div class="container-video">
+      <lite-youtube class="container-video__iframe" videoid="sIvYdLHwv8A">
+        <a href="https://www.youtube.com/watch?v=sIvYdLHwv8A" class="lyt-playbtn" title="Play Video">
+          <span class="lyt-visually-hidden">How to Make a Mojito | 60 Second Cocktails</span>
+        </a>
+    </lite-youtube>
+    </div>
   </main>
       
   <include src="src/partials/footer.html"></include>
