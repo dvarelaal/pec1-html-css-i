@@ -64,12 +64,15 @@
         </div>
         
       </div>
-
     </div>
-
+    
     <div class="container-video">
-      <iframe class="container-video__iframe" src="https://www.youtube.com/embed/zmL278Pd_W4?si=2CJW_mJ42Syg3NK0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>    
+      <lite-youtube class="container-video__iframe" videoid="zmL278Pd_W4">
+        <a href="https://www.youtube.com/watch?v=zmL278Pd_W4" class="lyt-playbtn" title="Play Video">
+          <span class="lyt-visually-hidden">How to Make a Piña Colada | 60 Second Cocktails</span>
+        </a>
+      </lite-youtube>
+    </div>
   </main>
       
   <include src="src/partials/footer.html"></include>
